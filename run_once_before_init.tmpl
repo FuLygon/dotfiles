@@ -23,10 +23,13 @@ if [ ! -f "$HOME/.config/chezmoi/key.txt" ]; then
     else
         files=$(find $HOME/.local/share/chezmoi -name 'encrypted_*' -type f)
         if [ -n "$files" ]; then
-            echo "Removing encrypted dotfiles..."
+            echo "Removing template and encrypted dotfiles..."
             echo "$files" | xargs rm
-            echo "Encrypted dotfiles removed."
-            echo "Terminating chezmoi... Run 'chezmoi init --apply' again after chezmoi terminated."
+            rm $HOME/.local/share/chezmoi/.chezmoi.toml.tmpl
+            echo "Encrypted dotfiles and template removed."
+            echo "Removing applied chezmoi config and terminating chezmoi..."
+            echo "Run 'chezmoi init --apply' again after chezmoi terminated."
+            rm $HOME/.config/chezmoi/*
             killall chezmoi
             exit 0
         else
