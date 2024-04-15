@@ -27,7 +27,7 @@ if [ ! -f "$HOME/.config/chezmoi/key.txt" ]; then
             echo "$files" | xargs rm
             rm $HOME/.local/share/chezmoi/.chezmoi.toml.tmpl
             echo "Encrypted dotfiles and template removed."
-            echo "Removing existing chezmoi config and terminating chezmoi..."
+            echo "Removing existed chezmoi config and terminating chezmoi..."
             echo "Run 'chezmoi init --apply' again after chezmoi terminated."
             rm $HOME/.config/chezmoi/*
             killall chezmoi
