@@ -1,0 +1,69 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
+# PATH
+path+=('/home/fulygon/.spicetify')
+export PATH
+
+# Created by newuser for 5.9
+source ~/.local/share/bin/ls-catppuccin.sh
+source ~/.powerlevel10k/powerlevel10k.zsh-theme
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-defer/zsh-defer.plugin.zsh
+source /usr/share/zsh/plugins/zsh-histdb/sqlite-history.zsh
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+bindkey -e
+# End of lines configured by zsh-newuser-install
+
+# Keybindings
+bindkey '^[[1;5D' backward-word
+bindkey '^[[1;5C' forward-word
+bindkey '^[[A' history-beginning-search-backward
+bindkey '^[[B' history-beginning-search-forward
+bindkey '^[[H' beginning-of-line
+bindkey '^[[F' end-of-line
+bindkey '^[[3~' delete-char
+bindkey '^H' backward-kill-word
+
+# The following lines were added by compinstall
+zstyle :compinstall filename '/home/fulygon/.zshrc'
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+autoload -Uz add-zsh-hook
+
+# Alias
+alias ls="ls --color=auto"
+alias cat='bat -pp'
+alias ssh='TERM=kitty ssh'
+alias xclip-c='xclip -sel c -r'
+alias plasmatrayedit='sudo nano /usr/share/plasma/plasmoids/org.kde.plasma.private.systemtray/contents/ui/main.qml'
+alias copilot='gh copilot suggest'
+
+function lg()
+{
+    export LAZYGIT_NEW_DIR_FILE=~/.lazygit/newdir
+
+    lazygit "$@"
+
+    if [ -f $LAZYGIT_NEW_DIR_FILE ]; then
+            cd "$(cat $LAZYGIT_NEW_DIR_FILE)"
+            rm -f $LAZYGIT_NEW_DIR_FILE > /dev/null
+    fi
+}
+
+# Export
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export PATH=$PATH:/home/fulygon/.spicetify
