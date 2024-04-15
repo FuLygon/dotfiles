@@ -29,7 +29,7 @@ if [ ! -f "$HOME/.config/chezmoi/key.txt" ]; then
             echo "Encrypted dotfiles and template removed."
             echo "Removing existed chezmoi config and terminating chezmoi..."
             rm $HOME/.config/chezmoi/*
-            echo "Run 'chezmoi init --apply' again after chezmoi terminated."
+            echo "Run 'chezmoi init --apply' after chezmoi terminated."
             killall chezmoi
             exit 0
         else
