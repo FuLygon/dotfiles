@@ -1,0 +1,13 @@
+#!/bin/sh
+
+if [ ! -f "$HOME/.config/chezmoi/key.txt" ]; then
+    read -p "Enter the location of chezmoi private key: " privateKeyLocation
+    if [ ! -f "$privateKeyLocation" ]; then
+        echo "Key does not exist. Manual intervention needed. Exiting..."
+        exit 1
+    fi
+    
+    mkdir -p "$HOME/.config/chezmoi"
+    chezmoi age decrypt --output "$HOME/.config/chezmoi/key.txt" --passphrase $privateKeyLocation
+    chmod 600 "$HOME/.config/chezmoi/key.txt"
+fi
