@@ -10,4 +10,12 @@ if [ ! -f "$HOME/.config/chezmoi/key.txt" ]; then
     mkdir -p "$HOME/.config/chezmoi"
     chezmoi age decrypt --output "$HOME/.config/chezmoi/key.txt" --passphrase $privateKeyLocation
     chmod 600 "$HOME/.config/chezmoi/key.txt"
+    
+    read -p "Key successfully decrypted. Remove private key? [y/N] " removePrivateKey
+    
+    if [ $removePrivateKey == "y" ] || [ $removePrivateKey == "Y" ]; then
+        rm $privateKeyLocation
+        echo "Private key removed."
+        exit 0
+    fi
 fi
