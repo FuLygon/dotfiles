@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="16"
+   height="16"
+   version="1"
+   id="svg1"
+   sodipodi:docname="telegram-panel.svg"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:zoom="54.6875"
+     inkscape:cx="8"
+     inkscape:cy="8"
+     inkscape:window-width="1920"
+     inkscape:window-height="1052"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <defs
+     id="defs1">
+    <style
+       id="current-color-scheme"
+       type="text/css">
+   .ColorScheme-Text { color:#dfdfdf; } .ColorScheme-Highlight { color:#4285f4; } .ColorScheme-NeutralText { color:#ff9800; } .ColorScheme-PositiveText { color:#4caf50; } .ColorScheme-NegativeText { color:#f44336; }
+  </style>
+  </defs>
+  <path
+     style="fill:currentColor;stroke-width:0.9"
+     class="ColorScheme-Text"
+     d="M 13.447345,13.340791 C 13.675614,12.909243 14.987262,5.5302419 15.174767,3.622754 15.377619,1.7325967 14.319928,2.0840876 13.346683,2.4033946 10.958938,3.1894924 3.4096416,6.5562755 1.3432528,7.6078978 0.83452733,7.8135768 0.61463414,8.1625522 0.98479219,8.4645989 1.3034976,8.7206194 2.4697047,9.0722553 3.410221,9.2507032 4.2119684,9.4875234 4.8347289,9.2606833 5.4095898,8.94452 6.7910899,8.1459153 10.907647,5.4256562 11.129327,5.2840845 11.35101,5.1425126 11.593636,5.4052479 11.469569,5.5324392 11.345501,5.6596299 8.4300902,8.2087657 7.472893,9.361314 c -0.507108,0.6337223 -0.4919177,0.972058 0.029031,1.371679 1.1687049,0.893537 4.2912437,2.930576 4.7558667,3.053702 0.592464,0.157003 0.939452,0.02694 1.18956,-0.445904 z"
+     id="path1" />
+</svg>
