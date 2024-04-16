@@ -48,8 +48,8 @@ autoload -Uz add-zsh-hook
 alias grep='grep --color=auto'
 alias ls="exa -gho --icons"
 alias cat='bat -pp'
-alias xclip-c='xclip -sel c -r'
-alias plasmatrayedit='sudo nano /usr/share/plasma/plasmoids/org.kde.plasma.private.systemtray/contents/ui/main.qml'
+alias clipboard='xclip -sel c -r'
+alias plasma-tray-edit='sudo nano /usr/share/plasma/plasmoids/org.kde.plasma.private.systemtray/contents/ui/main.qml'
 alias copilot='gh copilot suggest'
 
 function lg()
