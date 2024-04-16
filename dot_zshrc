@@ -9,25 +9,35 @@ fi
 path+=('$HOME/.spicetify')
 export PATH
 
-# Created by newuser for 5.9
+# Plugins
 source ~/.local/share/bin/ls-catppuccin.sh
 source ~/.powerlevel10k/powerlevel10k.zsh-theme
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 source /usr/share/zsh/plugins/zsh-defer/zsh-defer.plugin.zsh
 source /usr/share/zsh/plugins/zsh-histdb/sqlite-history.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# Lines configured by zsh-newuser-install
+# ZSH history
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
-bindkey -e
-# End of lines configured by zsh-newuser-install
+
+# zstyle
+zstyle ':autocomplete:*' ignored-input '*'
+zstyle :compinstall filename '$HOME/.zshrc'
+
+
+# ZSH completion
+autoload -Uz compinit
+compinit
+autoload -Uz add-zsh-hook
 
 # Keybindings
+bindkey -e
 bindkey '^[[1;5D' backward-word
 bindkey '^[[1;5C' forward-word
 bindkey '^[[A' history-beginning-search-backward
@@ -36,13 +46,6 @@ bindkey '^[[H' beginning-of-line
 bindkey '^[[F' end-of-line
 bindkey '^[[3~' delete-char
 bindkey '^H' backward-kill-word
-
-# The following lines were added by compinstall
-zstyle :compinstall filename '$HOME/.zshrc'
-autoload -Uz compinit
-compinit
-# End of lines added by compinstall
-autoload -Uz add-zsh-hook
 
 # Alias
 alias grep='grep --color=auto'
