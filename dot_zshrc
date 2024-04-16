@@ -6,7 +6,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # PATH
-path+=('/home/fulygon/.spicetify')
+path+=('$HOME/.spicetify')
 export PATH
 
 # Created by newuser for 5.9
@@ -38,7 +38,7 @@ bindkey '^[[3~' delete-char
 bindkey '^H' backward-kill-word
 
 # The following lines were added by compinstall
-zstyle :compinstall filename '/home/fulygon/.zshrc'
+zstyle :compinstall filename '$HOME/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
