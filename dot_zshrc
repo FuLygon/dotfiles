@@ -45,9 +45,9 @@ compinit
 autoload -Uz add-zsh-hook
 
 # Alias
-alias ls="ls --color=auto"
+alias grep='grep --color=auto'
+alias ls="exa -gho --icons"
 alias cat='bat -pp'
-alias ssh='TERM=kitty ssh'
 alias xclip-c='xclip -sel c -r'
 alias plasmatrayedit='sudo nano /usr/share/plasma/plasmoids/org.kde.plasma.private.systemtray/contents/ui/main.qml'
 alias copilot='gh copilot suggest'
