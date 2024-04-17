@@ -36,7 +36,7 @@ zstyle ':autocomplete:*' ignored-input '*'
 zstyle :compinstall filename '$HOME/.zshrc'
 
 # zoxide
-eval "$(zoxide init zsh)"
+eval "$(zoxide init --cmd cd zsh)"
 
 # Keybindings
 bindkey -e
@@ -49,6 +49,9 @@ bindkey '^[[F' end-of-line
 bindkey '^[[3~' delete-char
 bindkey '5~' kill-word
 bindkey '^H' backward-kill-word
+bindkey '^I' menu-select
+bindkey -M menuselect '^I' menu-complete
+bindkey -M menuselect "$terminfo[kcbt]" reverse-menu-complete
 
 # Alias
 alias grep='grep --color=auto'
@@ -57,7 +60,6 @@ alias cat='bat -pp'
 alias clipboard='xclip -sel c -r'
 alias plasma-tray-edit='sudo nano /usr/share/plasma/plasmoids/org.kde.plasma.private.systemtray/contents/ui/main.qml'
 alias copilot='gh copilot suggest'
-alias cd="z"
 
 function lg()
 {
