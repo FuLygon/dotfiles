@@ -20,7 +20,7 @@ path+=($HOME/.spicetify)
 export PATH
 
 # Plugins
-source ~/.local/share/bin/ls-catppuccin.sh
+source ~/.local/share/bin/ls-catppuccin-macchiato.sh
 source ~/.powerlevel10k/powerlevel10k.zsh-theme
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
