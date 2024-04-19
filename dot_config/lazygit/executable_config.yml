@@ -39,4 +39,4 @@ customCommands:
     command: "code ."
     context: "global"
 os:
-  editPreset: 'code'
+  editPreset: 'vscode'
