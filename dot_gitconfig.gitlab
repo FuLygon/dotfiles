@@ -1,0 +1,2 @@
+[user]
+    signingkey = ~/.ssh/git/fulygon_gitlab_com.pub
