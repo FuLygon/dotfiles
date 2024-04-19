@@ -29,6 +29,7 @@ git:
     signOff: true
   log:
     showGraph: always
+  overrideGpg: true
 notARepository: "skip"
 keybinding:
   commits:
@@ -38,4 +39,4 @@ customCommands:
     command: "code ."
     context: "global"
 os:
-  editPreset: "vscode"
+  editPreset: 'code'
