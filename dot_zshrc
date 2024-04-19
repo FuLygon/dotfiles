@@ -59,7 +59,7 @@ alias ls="exa -gho --icons=always"
 alias cat='bat -pp'
 alias clipboard='xclip -sel c -r'
 alias betterdiscordctl-update='~/.local/share/bin/betterdiscordctl-update.sh'
-alias plasma-tray-edit='sudo nano /usr/share/plasma/plasmoids/org.kde.plasma.private.systemtray/contents/ui/main.qml'
+alias systemtray-update="sudo sed -i.bkp 's/Kirigami.Units.iconSizes.smallMedium/Kirigami.Units.iconSizes.small/' /usr/share/plasma/plasmoids/org.kde.plasma.private.systemtray/contents/ui/main.qml"
 alias copilot='gh copilot suggest'
 alias yay='yay --aur'
 function lg()
