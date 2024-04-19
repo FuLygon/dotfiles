@@ -1,4 +1,5 @@
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 export GPG_TTY=$(tty)
-ssh-add ~/.ssh/a8DT3FdWy4rj6MT7 >/dev/null
-ssh-add ~/.ssh/4FhbJ46Aa88VP6Xq >/dev/null
+ssh-add ~/.ssh/git/fulygon_github_com >/dev/null
+ssh-add ~/.ssh/git/fulygon_gitlab_com >/dev/null
+ssh-add ~/.ssh/git/thanhthai_git_jcore_me >/dev/null
