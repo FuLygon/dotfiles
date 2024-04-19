@@ -61,7 +61,7 @@ alias clipboard='xclip -sel c -r'
 alias betterdiscordctl-update='~/.local/share/bin/betterdiscordctl-update.sh'
 alias plasma-tray-edit='sudo nano /usr/share/plasma/plasmoids/org.kde.plasma.private.systemtray/contents/ui/main.qml'
 alias copilot='gh copilot suggest'
-
+alias yay='yay --aur'
 function lg()
 {
     export LAZYGIT_NEW_DIR_FILE=~/.lazygit/newdir
