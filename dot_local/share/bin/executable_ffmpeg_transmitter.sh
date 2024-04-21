@@ -18,4 +18,4 @@ if ! pactl list short sinks | grep  "Remote"; then
 fi
 
 
-ffmpeg -f pulse -i "Remote.monitor" -ac 2 -acodec pcm_s16le -ar 48000 -f u32le "udp://$1:18181"
+ffmpeg -f pulse -i "Remote.monitor" -ac 2 -acodec pcm_s16le -ar 48000 -f s16le "udp://$1:18181"
