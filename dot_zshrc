@@ -64,6 +64,8 @@ alias systemtray-update="sudo sed
 alias copilot='gh copilot suggest'
 alias yay='yay --aur'
 alias audio-broadcast='~/.local/share/bin/ffmpeg_transmitter.sh'
+alias waynergy-start='~/.local/share/bin/waynergy-start.sh'
+
 function lg()
 {
     export LAZYGIT_NEW_DIR_FILE=~/.config/lazygit/newdir
