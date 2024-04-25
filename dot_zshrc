@@ -66,6 +66,10 @@ alias yay='yay --aur'
 alias audio-broadcast='~/.local/share/bin/ffmpeg_transmitter.sh'
 alias waynergy-start='~/.local/share/bin/waynergy-start.sh'
 
+if [ "$TERM" = "xterm-kitty" ]; then
+  alias ssh="kitten ssh"
+fi
+
 function lg()
 {
     export LAZYGIT_NEW_DIR_FILE=~/.config/lazygit/newdir
