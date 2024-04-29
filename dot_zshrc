@@ -20,13 +20,14 @@ path+=($HOME/.spicetify)
 export PATH
 
 # Plugins
+source /usr/share/zsh/plugins/zsh-defer/zsh-defer.plugin.zsh
 source ~/.local/share/bin/ls-catppuccin-macchiato.sh
 source ~/.powerlevel10k/powerlevel10k.zsh-theme
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
-source /usr/share/zsh/plugins/zsh-defer/zsh-defer.plugin.zsh
 source /usr/share/zsh/plugins/zsh-histdb/sqlite-history.zsh
+source /usr/share/nvm/init-nvm.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
