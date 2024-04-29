@@ -1,6 +1,7 @@
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 
 source /usr/share/nvm/init-nvm.sh
+source ~/.local/share/bin/ls-catppuccin-macchiato.sh
 
 ssh-add ~/.ssh/git/fulygon_github_com >/dev/null
 ssh-add ~/.ssh/git/fulygon_gitlab_com >/dev/null

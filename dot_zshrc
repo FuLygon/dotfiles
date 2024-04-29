@@ -21,7 +21,6 @@ export PATH
 
 # Plugins
 source /usr/share/zsh/plugins/zsh-defer/zsh-defer.plugin.zsh
-source ~/.local/share/bin/ls-catppuccin-macchiato.sh
 source ~/.powerlevel10k/powerlevel10k.zsh-theme
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
