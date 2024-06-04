@@ -17,6 +17,7 @@ SAVEHIST=10000
 
 # PATH
 path+=($HOME/.spicetify)
+path+=($HOME/go/bin)
 export PATH
 
 # Plugins
