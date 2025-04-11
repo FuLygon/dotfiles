@@ -24,7 +24,6 @@
 [url "git@ssh.git.jcore.me:"]
 	insteadOf = https://git.jcore.me
 
-# [includeIf "hasconfig:remote.*.url:https://github.com/**/**"]
 [includeIf "hasconfig:remote.*.url:git@github.com:**/**"]
 	path = .gitconfig.github
 

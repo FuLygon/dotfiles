@@ -1,9 +1,9 @@
-export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
-
 source /usr/share/nvm/init-nvm.sh
 source ~/.local/share/bin/ls-catppuccin-macchiato.sh
 
+export GIT_SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 ssh-add ~/.ssh/git/fulygon_github_com >/dev/null
 ssh-add ~/.ssh/git/fulygon_gitlab_com >/dev/null
 ssh-add ~/.ssh/git/thanhthai_git_jcore_me >/dev/null
-
+export GIT_SSH_COMMAND="ssh -a -o 'IdentityAgent=$GIT_SSH_AUTH_SOCK'"
+export SSH_AUTH_SOCK=/home/fulygon/.bitwarden-ssh-agent.sock
