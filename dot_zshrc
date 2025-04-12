@@ -65,6 +65,7 @@ alias copilot='gh copilot suggest'
 alias yay='yay --aur'
 alias audio-broadcast='~/.local/share/bin/ffmpeg_transmitter.sh'
 alias waynergy-start='~/.local/share/bin/waynergy-start.sh'
+alias chezmoi='SSH_AUTH_SOCK= chezmoi'
 
 if [ "$TERM" = "xterm-kitty" ]; then
   alias ssh="kitten ssh"
