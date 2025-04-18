@@ -66,10 +66,12 @@ alias yay='yay --aur'
 alias audio-broadcast='~/.local/share/bin/ffmpeg_transmitter.sh'
 alias waynergy-start='~/.local/share/bin/waynergy-start.sh'
 alias chezmoi='SSH_AUTH_SOCK= chezmoi'
+alias kitty='echo "open wezterm/term instead"'
+alias term='wezterm start --cwd $PWD'
 
-if [ "$TERM" = "xterm-kitty" ]; then
-  alias ssh="kitten ssh"
-fi
+#if [ "$TERM" = "xterm-kitty" ]; then
+#  alias ssh="kitten ssh"
+#fi
 
 function lg()
 {
